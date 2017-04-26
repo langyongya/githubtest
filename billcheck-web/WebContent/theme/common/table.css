@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/*---数据编辑页面标题单元格---*/
+.Td_t
+{
+    padding-left: 3px;
+    background: #F2F2F2;
+    border-bottom: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+    vertical-align: middle;
+    height: 23px;
+    width: 120px;
+    font-size:12px;
+    white-space: normal;
+    word-break: break-all;
+}
+
+/*---数据编辑页面内容单元格---*/
+.Td_c
+{
+    background: white;
+    border-bottom: 1px solid #DADADA;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size:12px;
+}
+
+.Td_t_p
+{
+    padding-left: 3px;
+    background: #F2F2F2;
+    border-bottom: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+    vertical-align: middle;
+    height: 23px;
+    width: 60px;
+    font-size:12px;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.Td_t_n
+{
+    background: #F2F2F2;
+    border-bottom: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+    vertical-align: middle;
+    height: 23px;
+    width: 60px;
+    font-size:12px;
+    white-space: normal;
+    word-break: break-all;
+}
+
+.Td_c_desc
+{
+    background: white;
+    border-bottom: 1px solid #DADADA;
+    vertical-align: middle;    
+    font-size:12px;
+    word-break:break-all;
+}
+.fixWidth{
+	width:210px;
+}
+.table_input
+{
+    border: 0px solid #FFFFFF;
+    background: #FFFFFF;
+    font:12px/1.5 宋体,arial,tahoma;
+    height:30px;
+}
+.xjqbox{ 
+	border: 1px solid red; 
+    font:12px/1.5 宋体,arial,tahoma;
+    height:30px;
+	background: url(images/validatebox_warning.png) no-repeat right 1px #FFFFEE;
+	}
+.xjqsel{ 
+	border: 1px solid red; 
+	}

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+.upload-div{
+	position:relative;
+}
+.upload-img {
+	margin-bottom:30px;
+	font-size: 12px;
+	overflow: hidden;
+	position: absolute;
+}
+			
+.upload-file {
+	position: absolute;
+	z-index: 100;
+	margin-left: -180px;
+	font-size: 40px;
+	color: #FFFFFF;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	margin-top: -5px;
+	text-decoration: none;
+}
+.upload-a{
+	background-image: url(images/system/staff_add.png);
+	background-repeat: no-repeat;
+	background-position: left; 
+	display: inline-block;
+	margin-bottom: 10px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	width:68px;
+	color:black;
+	display:block; 
+	text-align:right;
+	text-decoration: none;
+	cursor: pointer;
+}

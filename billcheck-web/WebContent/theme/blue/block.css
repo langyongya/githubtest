@@ -1,0 +1,807 @@
+@charset "UTF-8";
+/*登录界面------------------------*/
+.login_content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -265px 0 0 -50%;
+	width: 100%;
+	height: 535px;
+	text-align: center;
+	z-index: 99;
+}
+
+.login_top {
+	height: 50px;
+}
+
+.login_top .col_left {
+	font: 30px/ 50px 宋体;
+	color: #000;
+	text-align: left;
+}
+
+.login_top .col_left img {
+	vertical-align: top;
+}
+
+.login_top .col_right {
+	font: 12px/ 50px 宋体;
+	color: #535670;
+	width: 300px;
+}
+
+.login_top .col_right span {
+	color: #afb4d2;
+	padding: 0 5px;
+}
+
+.login_main {
+	height: 415px;
+	/*background-color: #a2cdee;*/
+}
+
+.login_bg {
+	background: url('./images/system/login_mbg.jpg') no-repeat;
+	height: 415px;
+}
+
+.login_text {
+	width: 330px;
+	height: 415px;
+	margin-left: 430px;
+	display: inline-block;
+}
+
+/*输入框*/
+.login_text ul {
+	margin: 105px 0 0 60px;
+	display: inline-block;
+}
+
+.login_text ul li {
+	height: 40px;
+	width: 230px;
+	float: left;
+	margin-bottom: 13px;
+}
+
+.login_text ul li input {
+	width: 230px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	border: 0;
+	background-color: #f6f6f9;
+}
+
+.login_text ul li .input_1 {
+	width: 110px;
+	float: left;
+}
+
+/*登录按钮*/
+.login_menu {
+	
+}
+
+.input_Login,.input_Login:hover,.input_Cancel,.input_Cancel:hover {
+	background: url('./images/system/login_bt.gif') no-repeat;
+	width: 92px;
+	height: 42px;
+	border: 0;
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.input_Login {
+	background-position: left top;
+}
+
+.input_Login:hover {
+	background-position: left -42px;
+}
+
+.input_Cancel {
+	background-position: -92px top;
+	margin-left: 10px;
+}
+
+.input_Cancel:hover {
+	background-position: -92px -42px;
+}
+
+/*选择项*/
+.login_select {
+	line-height: 50px;
+	height: 50px;
+	color: #535670;
+	float: left;
+	padding-left: 30px;
+	margin-top: 20px;
+}
+
+.login_select input {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+/*底部*/
+.login_foot {
+	height: 60px;
+	background-color: #f3f3f3;
+}
+
+.login_foot_c .col_left {
+	/*background: url('./images/system/boss_logo.jpg') no-repeat;*/
+	width: 100px;
+	height: 60px;
+}
+
+.login_foot_c .col_right {
+	width: 320px;
+	color: #626578;
+	line-height: 60px;
+}
+
+/*-------------------------------END  登录界面	END-------------------------------------------------------*/
+
+/*-------------------------------	主页	-------------------------*/
+/*顶部*/
+.header {
+	height:8%;
+	width:100%;
+	overflow: hidden;
+}
+
+.header .col_left {
+	font: 30px 宋体;
+	color: #000;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.distance{
+	margin-top:10px;
+}
+
+.header .col_left img {
+	vertical-align: middle;
+	_padding-top: 10px;
+}
+
+.header .col_right {
+	width: 600px;
+	text-align: right;
+	padding-right: 10px;
+	/*height: 42px;*/
+	line-height: 24px;
+	color: #888888;
+}
+
+.header .col_right strong {
+	color: #40445d;
+	padding-right: 5px;
+}
+
+.header .col_right span {
+	/*padding: 0 5px;*/
+	color: #d6d6d6;
+}
+
+/*内容*/
+.main {
+	height:87%;
+	width:100%;
+}
+
+/*左*/
+.main .col_left {
+	width: 13%;
+	float:left;
+	text-align: center;
+}
+
+.fasttrack {
+	width: 179px;
+	margin-left: 13px;
+	height: auto;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.fasttrack_content {
+	width: 159px;
+	float: left;
+}
+
+.fasttrack_content h1 {
+	background: url('./images/system/passage_bg.gif') no-repeat left center;
+	height: 31px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 31px;
+}
+
+.fasttrack_content h1 .col_left {
+	width: 80px;
+}
+
+.fasttrack_content h1 .col_right {
+	width: 40px;
+}
+
+.fasttrack_list {
+	background-color: #eff0f8;
+	border: 1px solid #979cb5;
+	width: 157px;
+	padding: 5px 0;
+	height: auto;
+	overflow: hidden;
+}
+
+.fasttrack_list ul {
+	
+}
+
+.fasttrack_list ul li {
+	float: left;
+	margin: 5px 0 0 5px;
+	display: inline;
+	width: 72px;
+	height: 72px;
+	text-align: center
+}
+
+.fasttrack_list ul li samp {
+	height: 32px;
+	padding-top: 10px;
+	display: block;
+}
+
+.fasttrack_list ul li em {
+	line-height: 24px;
+	display: block;
+	color: #535670;
+}
+
+.fasttrack_list ul li a:hover {
+	background: url('./images/system/fastpass_bg.gif') no-repeat;
+	display: block;
+	width: 72px;
+	height: 72px;
+}
+
+.fasttrack_bt {
+	background: url('./images/system/arrow.gif') no-repeat;
+	width: 18px;
+	height: 90px;
+	float: left;
+	margin-top: 30px;
+	border: 0;
+	cursor: pointer;
+}
+
+.fasttrack_bt {
+	background-position: left top;
+}
+
+.fasttrack_bt:hover {
+	background-position: -18px top;
+}
+
+.fasttrack_bt1 {
+	background-position: -36px top;
+}
+
+.fasttrack_bt1:hover {
+	background-position: -54px top;
+}
+
+/*右*/
+.main .col_main {
+	float:right;
+	text-align: center;
+	height: 628px;
+	position:relative;
+}
+/*系统提示*/
+.prompt {
+	height: 37px;
+	margin-top: 10px;
+}
+
+.remind {
+	background: url('./images/system/remind_bg_1.gif') repeat-x left center;
+	width: auto !important;
+	width: 800px;
+	min-width: 800px;
+	height: 37px;
+	line-height: 37px;
+	float: left;
+	text-align: left;
+	color: #535670;
+}
+
+.remind .col_left,.remind .col_right {
+	background: url('./images/system/remind_bg.gif') no-repeat;
+	height: 37px;
+}
+
+.remind .col_left {
+	background-position: left top;
+	width: 10px;
+}
+
+.remind .col_right {
+	background-position: -10px top;
+	width: 10px;
+}
+
+.remind strong {
+	color: #117a00;
+}
+
+.setup {
+	background: url('./images/system/setup_bt.gif') no-repeat left center;
+	width: 74px;
+	height: 37px;
+	line-height: 37px;
+	color: #60637b;
+	text-align: center;
+	cursor: pointer;
+	border: 0;
+	float: left;
+	margin-left: 10px;
+}
+
+/*新闻框*/
+.news {
+	width: 327px;
+	float: left;
+	margin: 10px 20px 0 0;
+	display: inline;
+}
+
+.news h1 {
+	background: url('./images/system/news_top.jpg') no-repeat left center;
+	height: 32px;
+	line-height: 32px;
+	color: #373c5a;
+	font-weight: bold;
+}
+
+.news h1 .col_left {
+	width: 100px;
+	text-align: left;
+	text-indent: 20px;
+}
+
+.news h1 .col_right {
+	width: 45px;
+	height: 30px;
+	padding-top: 1px;
+	padding-right: 2px;
+}
+
+.news_content {
+	background-color: #fff;
+	border-left: 1px solid #bdc0d0;
+	border-right: 1px solid #bdc0d0;
+	padding: 10px 10px 0 10px;
+	height: 120;
+	overflow: hidden;
+	float: left;
+	width: 305px;
+}
+
+.news_content ul {
+	
+}
+
+.news_content ul li {
+	float: left;
+	text-align: left;
+	width: 300px;
+	overflow: hidden;
+	line-height: 28px;
+}
+
+.news_foot {
+	float: left;
+	background: url('./images/system/news_bg.jpg') no-repeat left top;
+	width: 327px;
+	height: 19px;
+}
+/*员工转正 售后派单提醒*/
+.news_staff {
+	width: 327px;
+	float: left;
+	margin-right:20px;
+	display: inline;
+}
+.news_staff h1 {
+	background: url('./images/system/news_top.jpg') no-repeat left center;
+	height: 32px;
+	line-height: 32px;
+	color: #373c5a;
+	font-weight: bold;
+}
+.news_staff h1 .col_left {
+	width: 100px;
+	text-align: left;
+	text-indent: 20px;
+}
+.news_staff h1 .col_right {
+	width: 58px;
+	height: 30px;
+	padding-top: 1px;
+	padding-right: 10px;
+}
+
+/* 底部*/
+.foot {
+	background: url('./images/system/foot_bg.gif') repeat-x left center;
+	height: 47px;
+	width: 100%;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+.foot .col_left {
+	background: url('./images/system/foot_logo.gif') no-repeat left;
+	padding-left: 20px;
+	width: 112px;
+	height: 47px;
+	overflow:hidden;
+}
+
+.foot .col_right {
+	width: 500px;
+	text-align: right;
+	padding-top:10px;
+	padding-right: 20px;
+	/*line-height: 54px;*/
+	color: #535670;
+}
+
+/*列表页面-------------------------------------------------------*/
+.list {
+	border-left: 1px solid #b3b8d5;
+	float: left;
+	width: 100%;
+}
+
+.list_top {
+	background: url('./images/system/list_top_bg.gif') repeat-x left top;
+	height: 78px;
+	overflow: hidden;
+}
+
+/* 选项卡*/
+.list_top_tab {
+	height: 39px;
+}
+
+.list_top_tab ul {
+	padding-left: 5px;
+}
+
+.list_top_tab li,.list_top_tab li a:hover,.list_top_tab_current a {
+	background: url('./images/system/tab.gif') no-repeat;
+	width: 95px;
+	height: 32px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 32px;
+	display: inline;
+}
+
+.list_top_tab li {
+	float: left;
+	text-align: center;
+	margin: 7px 3px 0 0;
+	background-position: left -32px;
+	color: #666;
+}
+
+.list_top_tab li a:link,.list_top_tab li a:visited {
+	color: #666;
+}
+
+.list_top_tab li a:hover {
+	background-position: left -64px;
+	display: block;
+	color: #588c3a;
+}
+
+.list_top_tab_current {
+	
+}
+
+.list_top_tab_current a {
+	display: block;
+	background-position: left -top;
+	color: #d74725 !important;
+}
+
+/*菜单*/
+.list_top_menu {
+	height: 39px;
+}
+
+.list_top_menu ul {
+	
+}
+
+.list_top_menu ul li {
+	float: left;
+	padding: 0 10px;
+	display: inline;
+	line-height: 33px;
+	height: 33px;
+	_padding-top: 8px;
+	background: url('./images/system/spc_3.gif') no-repeat right center;
+}
+
+.list_top_menu ul li img {
+	vertical-align: middle;
+	padding-right: 2px;
+}
+
+/*表格*/
+.list_body {
+	
+}
+
+.list_body table {
+	border: 0;
+	width: 100%;
+	text-align: left;
+	display: inline-block;
+}
+
+.list_body table td {
+	height: 30px;
+	line-height: 30px;
+	color: #373c5a;
+	padding: 0 5px;
+	text-align: left;
+	cursor: pointer;
+}
+
+.list_body table input {
+	vertical-align: middle;
+}
+
+.list_body thead  tr {
+	background: url('./images/system/titel_bg.gif') repeat-x left center;
+}
+
+.oddrow {
+	background: #eaecf5;
+}
+
+.evenrow {
+	background: #fff;
+}
+
+.highlight {
+	background: #e9f8e0;
+}
+
+.tfoot {
+	float: left;
+	background-color: #c6cbe7;
+	height: 30px;
+	line-height: 30px;
+	width: 100%;
+	color: #2e3457;
+}
+
+/*分页*/
+.page {
+	float: left;
+}
+
+.page ul li {
+	float: left;
+	display: inline;
+	height: 22px;
+	line-height: 22px;
+	padding: 0 8px;
+	margin: 3px 0 0 3px;
+	background-color: #eff0f8;
+	border: 1px solid #8387a0;
+}
+
+.page ul li a:link,.page ul li a:visited {
+	color: #2e3457;
+}
+
+.page ul li a:hover {
+	color: #f06400;
+	text-decoration: underline;
+}
+
+.page .page_current {
+	background-color: #2e3457;
+	display: block;
+}
+
+.page .page_current  a {
+	color: #fff !important;
+}
+
+.page .special {
+	background: none;
+	border: 0;
+	padding: 0;
+}
+
+.pagetext {
+	width: 30px;
+	height: 22px;
+	border: 1px solid #8387a0;
+	padding: 0 5px;
+}
+
+.pageDetermine,.pageRefresh {
+	background: url('./images/system/bt1.gif') no-repeat;
+	width: 58px;
+	height: 25px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 25px;
+	border: 0;
+	cursor: pointer;
+	margin: 0 3px;
+}
+
+.pageDetermine {
+	background-position: left top;
+}
+
+.pageRefresh {
+	background-position: left -25px;
+}
+
+.tfoot .col_right {
+	padding-right: 10px;
+	line-height: 30px;
+}
+
+/*弹出框----------------------------------------------------------*/
+.Popup {
+	width: 460px;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #979cb5;
+}
+
+.Popup h1 {
+	background: url('./images/system/putop_bg.gif') repeat-x left center;
+	height: 32px;
+	line-height: 32px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.Popup h1 .col_left {
+	width: 100px;
+	text-indent: 10px;
+}
+
+.Popup h1 .col_right {
+	padding-right: 10px;
+}
+
+.Popup h1 .col_right input {
+	background: url('./images/system/close_1.gif') no-repeat;
+	width: 22px;
+	height: 32px;
+	cursor: pointer;
+	border: 0;
+}
+
+.Popup .col_main {
+	background-color: #e3e4f3;
+	padding: 10px;
+}
+
+.P_options {
+	margin-bottom: 10px;
+}
+
+.P_options select {
+	width: 150px;
+	height: 24px;
+}
+
+.P_options option {
+	color: #117a00;
+}
+
+.p_input1,.p_input2 {
+	background: url('./images/system/bt2.gif') no-repeat;
+	width: 73px;
+	height: 25px;
+	cursor: pointer;
+	border: 0;
+	text-align: center;
+	line-height: 25px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.p_input1 {
+	background-position: left top;
+}
+
+.p_input2 {
+	background-position: left -25px;
+}
+
+.p_mian {
+	border: 1px solid #979cb5;
+	margin-bottom: 10px;
+}
+
+.p_content {
+	border: 1px solid #fff;
+}
+
+/*快速通道设置*/
+.FastTrack_set {
+	border: 0;
+	width: 100%;
+	color: #535670;
+}
+
+.FastTrack_set td {
+	height: 28px;
+	line-height: 28px;
+	padding: 0 5px;
+	width: 50%;
+}
+
+.FastTrack_set input {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+.td1 {
+	border-right: 1px solid #c6cae1;
+	z-index: 99;
+}
+
+/*查询设置*/
+.p_search_set {
+	color: #373c5a;
+	padding: 5px 0;
+}
+
+.p_search_set dl {
+	
+}
+
+.p_search_set dl dt {
+	float: left;
+	width: 30%;
+	text-align: right;
+	height: 30px;
+	line-height: 25px;
+}
+
+.p_search_setdl  dd {
+	float: left;
+	width: 70%;
+	height: 40px;
+}
+
+.p_search_set dl dd select {
+	width: 220px;
+	height: 25px;
+	margin-bottom: 10px;
+}

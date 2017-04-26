@@ -1,0 +1,246 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>io.spring.platform</groupId>
+		<artifactId>platform-bom</artifactId>
+		<version>1.1.3.RELEASE</version>
+		<relativePath />
+	</parent>
+	
+	<groupId>com.bosssoft.einvoice</groupId>
+	<artifactId>billcheck-web</artifactId>
+	<packaging>pom</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<dependencies>
+		<dependency>
+			<groupId>xml-apis</groupId>
+			<artifactId>xml-apis</artifactId>
+			<version>1.3.04</version>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>ant</groupId>
+			<artifactId>ant</artifactId>
+			<version>1.6.5</version>
+		</dependency>
+		<dependency>
+			<groupId>asm</groupId>
+			<artifactId>asm</artifactId>
+			<version>3.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>asm</groupId>
+			<artifactId>asm-commons</artifactId>
+			<version>3.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+		</dependency>
+		<!-- Support for Ehcache and others -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.json-lib</groupId>
+			<artifactId>json-lib</artifactId>
+			<version>2.4</version>
+			<classifier>jdk15</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo</artifactId>
+			<version>${dubbo.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework</groupId>
+					<artifactId>spring</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>commons-logging</groupId>
+					<artifactId>commons-logging</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.jboss.netty</groupId>
+					<artifactId>netty</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.log4j</groupId>
+			<artifactId>com.springsource.org.apache.log4j</artifactId>
+			<version>1.2.16</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.bs</groupId>
+			<artifactId>eips-iface</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			</dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.zookeeper</groupId>
+			<artifactId>zookeeper</artifactId>
+			<version>${zookeeper.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.bs</groupId>
+			<artifactId>eips-user</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.bs</groupId>
+			<artifactId>electronicvoucher-sdk</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+	</dependencies>
+
+
+	<properties>
+		<!-- verions of common dependencies -->
+		<spring.version>4.1.7.RELEASE</spring.version>
+		<spring.security.version>4.0.1.RELEASE</spring.security.version>
+		<mybatis.version>3.4.0</mybatis.version>
+		<mybatis-spring.version>1.3.0</mybatis-spring.version>
+		<mapper.version>3.3.6</mapper.version>
+		<pagehelper.version>4.1.1</pagehelper.version>
+		<druid.version>1.0.18</druid.version>
+		<oracle.version>10.2.0.4.0</oracle.version>
+		<commons-dbcp2.version>2.1.1</commons-dbcp2.version>
+		<hsqldb.version>2.3.3</hsqldb.version>
+		<javax.servlet.version>3.1.0</javax.servlet.version>
+		<persistence-api.version>1.0.2</persistence-api.version>
+		<spring-data-redis.version>1.7.0.RELEASE</spring-data-redis.version>
+		<jedis.version>2.6.2</jedis.version>
+		<jjwt.version>0.4</jjwt.version>
+		<slf4j.version>1.7.16</slf4j.version>
+		<logback.version>1.1.4</logback.version>
+		<joda-time.version>2.9</joda-time.version>
+		<jackson-databind.version>2.6.4</jackson-databind.version>
+		<common-lang3.version>3.4</common-lang3.version>
+		<unirest.version>1.4.9</unirest.version>
+		<zookeeper.version>3.4.6</zookeeper.version>
+		<dubbo.version>2.5.3</dubbo.version>
+		<zkclient.version>0.1</zkclient.version>
+		<commons-fileupload.version>1.3.1</commons-fileupload.version>
+		<commons-io.version>2.5</commons-io.version>
+		<quartz.version>2.2.1</quartz.version>
+		<activiti.version>5.20.0</activiti.version>
+		<gson.version>2.7</gson.version>
+		<ntpay.version>0.1.0-SNAPSHOT</ntpay.version>
+		<commons-groovy-mapper.version>0.1.3</commons-groovy-mapper.version>
+		<netty.version>4.0.23.final</netty.version>
+		<voucher-png-sdk.version>0.0.6</voucher-png-sdk.version>
+		<itextpdf.version>5.5.1</itextpdf.version>
+		<bouncycastle.version>1.49</bouncycastle.version>
+		<dom4j.version>1.6</dom4j.version>
+		<json.version>20160212</json.version>
+		<netty-all.version>4.0.23.final</netty-all.version>
+		<pagehelper.version>3.4.2</pagehelper.version>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<ehcache.version>2.9.0</ehcache.version>
+		<oracle.jdbc.version>10.2.0.4.0</oracle.jdbc.version>
+	</properties>
+	
+	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<configuration>
+					<excludeResources>true</excludeResources>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<docfilessubdirs>true</docfilessubdirs>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<url>http://${nexus.server}/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<url>http://${nexus.server}/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
